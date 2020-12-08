@@ -1,0 +1,10 @@
+body {
+    background-image: linear-gradient(to right, rgba(141, 16, 167, 0.555), rgba(91, 164, 187, 0.692));
+    opacity: 0.8;
+}
+
+.maintenance { 
+    display: block;
+    margin-top: 20%;
+    text-align: center;
+}
