@@ -1,10 +1,72 @@
-body {
-    background-image: linear-gradient(to right, rgba(141, 16, 167, 0.555), rgba(91, 164, 187, 0.692));
-    opacity: 0.8;
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    overflow-x: hidden;
 }
 
-.maintenance { 
-    display: block;
-    margin-top: 20%;
+body {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#banner { 
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    height: 87.3vh;
+    justify-content: center;
     text-align: center;
+}
+
+.overlay {
+    height: 87.3vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    background: #000;
+    mix-blend-mode: overlay;
+}
+
+#banner video {
+    height: 87.3vh;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.7;
+    position: absolute;
+    right: 0;
+    width: 100vw;
+}
+
+.banner-text {
+    z-index: 10;
+}
+
+.banner-text h1 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+
+.banner-text p {
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer li { 
+    list-style: none;
+    padding: 5px 10px 10px 0;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
