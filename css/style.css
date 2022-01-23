@@ -15,13 +15,13 @@ body {
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    height: 87.3vh;
+    height: 100vh;
     justify-content: center;
     text-align: center;
 }
 
 .overlay {
-    height: 87.3vh;
+    height: 100vh;
     left: 0;
     position: absolute;
     right: 0;
@@ -31,7 +31,7 @@ body {
 }
 
 #banner video {
-    height: 87.3vh;
+    height: 100vh;
     left: 0;
     object-fit: cover;
     opacity: 0.7;
@@ -41,6 +41,7 @@ body {
 }
 
 .banner-text {
+    margin-top: 30vh;
     z-index: 10;
 }
 
@@ -51,6 +52,141 @@ body {
 
 .banner-text p {
     font-size: 1.5em;
+}
+
+.next-step {
+    height: 50px;
+    margin-top: 30vh;
+}
+
+.next-step:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    
+  
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+
+    animation: top-down 1s infinite alternate;
+}
+
+@keyframes top-down {
+    0% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h3 {
+    padding-bottom: 10px;
+}
+
+a {
+    color: black;
+}
+
+.section-title {
+    text-align: left;
+    padding: 25px 0;
+}
+
+#skills-section {
+    background-color: #000;
+    color: #fff;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    list-style: none;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.pac { 
+    background-color: rgb(255, 251, 0);
+    border-radius: 50px;
+    height: 70px;
+    position: relative;
+    top: 40px;
+    width: 70px;
+    bottom: 20px;
+}
+
+.pac .pac-eye {
+    background-color: #000;
+    border-radius: 10px;
+    height: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 10px;
+}
+
+.pac .pac-mouth {
+    background-color: #000;
+    height: 32px;
+    width: 20px;
+    clip-path: polygon(0 0, 0 100%, 100% 40%);
+}
+
+#skills-section,
+#works-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+#works-section {
+    margin-block-end: 30px;
+    margin-block-start: 30px;
+}
+
+.cartridge {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(175, 166, 166);
+    height: 260px;
+    width: 200px;
+    box-shadow: 8px -8px #a09c99;
+    margin-top: 20px;
+    align-content: center;
+    padding: 10px;
+  }
+  
+.cartridge img,
+.cartridge .img {
+    align-items: center;
+    border: 2px solid rgb(156, 146, 146);
+    display: flex;
+    font-size: 1.5em;
+    height: 110px;
+    justify-content: center;
+    margin-left: 17px;
+    margin-top: 15px;
+    text-align: center;
+    width: 170px;
+}
+
+.cartridge p {
+    font-size: 0.8em;
+    margin-left: 17px;
+    margin-top: 15px;
 }
 
 footer {
